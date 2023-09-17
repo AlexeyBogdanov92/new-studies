@@ -11,7 +11,7 @@ public class Task2 {
             System.out.println("Некорректный ввод");
         }
         for (a = ++a; a < b; a++) {
-            if (a != b && a % 5 == 0 && a % 10 != 0 && a <= b) {
+            if (a % 5 == 0 && a % 10 != 0) {
                 System.out.print(a + " ");
             }
         }

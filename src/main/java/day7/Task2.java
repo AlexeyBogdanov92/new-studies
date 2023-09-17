@@ -1,9 +1,5 @@
 package day7;
 
-
-
-import static day7.Player.*;
-
 public class Task2 {
     public static void main(String[] args) {
 

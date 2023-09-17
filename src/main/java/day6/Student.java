@@ -1,18 +1,18 @@
 package day6;
 
 public class Student {
-    private String FIO;
+    private String fio;
 
-    public Student(String FIO) {
-        this.FIO = FIO;
+    public Student(String fio) {
+        this.fio = fio;
 
     }
 
     public String getFIO() {
-        return FIO;
+        return fio;
     }
 
     public void setFIO(String FIO) {
-        this.FIO = FIO;
+        this.fio = fio;
     }
 }

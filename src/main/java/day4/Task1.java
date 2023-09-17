@@ -37,20 +37,17 @@ public class Task1 {
         System.out.println(count1);
 
         int countE = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0)
-                countE++;
-
-        }
-        System.out.println(countE);
-
         int countOdd = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 != 0)
+            if (arr[i] % 2 == 0) {
+                countE++;
+            }else {
                 countOdd++;
-
+            }
         }
+        System.out.println(countE);
         System.out.println(countOdd);
+        
 
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {

@@ -3,21 +3,21 @@ package day6;
 import java.util.Random;
 
 public class Teacher {
-    private String FIO;
+    private String fio;
     private String lesson;
 
-    public Teacher(String FIO, String lesson) {
-        this.FIO = FIO;
+    public Teacher(String fio, String lesson) {
+        this.fio = fio;
         this.lesson = lesson;
 
     }
 
     public String getFIO() {
-        return FIO;
+        return fio;
     }
 
     public void setFIO(String FIO) {
-        this.FIO = FIO;
+        this.fio = fio;
     }
 
     public String getLesson() {
@@ -43,12 +43,12 @@ public class Teacher {
             case (4):
                 evaluation = "хорошо";
                 break;
-            case (5):
+            default:
                 evaluation = "отлично";
                 break;
         }
 
-        System.out.println("Преподаватель " + this.FIO + " оценил студента с именем " + student.getFIO()
+        System.out.println("Преподаватель " + this.fio + " оценил студента с именем " + student.getFIO()
                 + " по предмету " + this.lesson + " на оценку " + evaluation + ".");
     }
 

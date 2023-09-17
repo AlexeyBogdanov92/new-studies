@@ -14,7 +14,7 @@ public class Airplane {
         this.year = yearOfRelease;
         this.length = length;
         this.weight = weigth;
-        this.fuel = 0;
+        this.fuel = fuel;
     }
 
     public void info() {
