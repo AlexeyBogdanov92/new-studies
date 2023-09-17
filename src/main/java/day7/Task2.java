@@ -1,12 +1,12 @@
 package day7;
 
-import java.util.Random;
+
 
 import static day7.Player.*;
 
 public class Task2 {
     public static void main(String[] args) {
-    Random random = new Random(100);
+
 
         Player player1 = new Player( 99);
         Player player2 = new Player( 90);
