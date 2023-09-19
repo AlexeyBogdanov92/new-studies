@@ -65,12 +65,13 @@ public class Airplane {
     public void setFuel(int fuel) {
         this.fuel = fuel;
     }
+
     public static void compareAirplanes(Airplane airplane1, Airplane airplane2) {
-        if (airplane1.getLength() > airplane2.getLength() ){
+        if (airplane1.getLength() > airplane2.getLength()) {
             System.out.println("Первый самолет длиннее");
-        }else if (airplane1.getLength() < airplane2.getLength() ){
+        } else if (airplane1.getLength() < airplane2.getLength()) {
             System.out.println("Второй самолет длиннее");
-        }else {
+        } else {
             System.out.println("Длины самолетов равны");
         }
 
@@ -78,7 +79,7 @@ public class Airplane {
 
     @Override
     public String toString() {
-        return "Производитель: "+ manufacturer + "\nгод выпуска: " + year
+        return "Производитель: " + manufacturer + "\nгод выпуска: " + year
                 + "\nдлина: " + length + "\nвес: " + weight;
     }
 }
