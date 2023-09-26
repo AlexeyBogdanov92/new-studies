@@ -4,7 +4,7 @@ import day11.task2.interfaces.Healer;
 
 public class Paladin extends Hero implements Healer {
 
-    static final int MAX_HEALTH = 100;
+
     static final int HEAL_AMOUNT = 25;
     static final int HEAL_TEAMMATE_AMOUNT = 20;
 

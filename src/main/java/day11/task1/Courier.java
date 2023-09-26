@@ -2,6 +2,7 @@ package day11.task1;
 
 public class Courier implements Worker {
     private int salary;
+    private int bonus = 50000;
     private static final int TASK_SALARY = 100;
 
     private Warehouse w;
@@ -23,7 +24,7 @@ public class Courier implements Worker {
 
     @Override
     public void bonus() {
-        if (w.getCountDeliveredOrders() < 10000) {
+        if (w.getCountDeliveredOrders() < BONUS_FOR_ORDER) {
             System.out.println("Бонус ещё недоступен");
             return;
         }
@@ -33,7 +34,7 @@ public class Courier implements Worker {
             return;
         }
 
-        salary += 50000;
+        salary += bonus;
         isPayed = true;
 
     }

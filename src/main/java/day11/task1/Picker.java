@@ -3,6 +3,7 @@ package day11.task1;
 public class Picker implements Worker {
     private int salary;
     private static final int TASK_SALARY = 80;
+    private int bonus = 70000;
 
     private Warehouse w;
     private boolean isPayed;
@@ -23,7 +24,7 @@ public class Picker implements Worker {
 
     @Override
     public void bonus() {
-        if (w.getCountPickedOrders() < 10000) {
+        if (w.getCountPickedOrders() < BONUS_FOR_ORDER) {
             System.out.println("Бонус ещё недоступен");
             return;
         }
@@ -33,7 +34,7 @@ public class Picker implements Worker {
             return;
         }
 
-        salary += 70000;
+        salary += bonus;
         isPayed = true;
 
     }
