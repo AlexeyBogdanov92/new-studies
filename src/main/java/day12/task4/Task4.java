@@ -8,11 +8,12 @@ import java.util.List;
 public class Task4 {
     public static void main(String[] args) {
         List<String> members1 = new ArrayList<>();
-        members1.add("Bob Marley");
-        members1.add("Cab Swonson");
-        members1.add("Tom Farr");
-        members1.add("Eddy Frost");
-        members1.add("MelL Gibson");
+
+//        members1.add("Bob Marley");
+//        members1.add("Cab Swonson");
+//        members1.add("Tom Farr");
+//        members1.add("Eddy Frost");
+//        members1.add("MelL Gibson");
 
         MusicBand band1 = new MusicBand("New Band", 2000, members1);
 
